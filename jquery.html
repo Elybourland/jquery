@@ -4,10 +4,24 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>jQuery</title>
 </head>
 <body>
+
+    <div id="circle"></div>
+
+    <div class="square"></div>
+
+    <div class="square"></div>
     
-    <script type="text/javascript" src="script.js"></script>
+   
+    <script type="text/javascript">
+    
+        $("div").click(function() {
+            alert("div was clicked");
+        });
+    
+    </script>
 </body>
 </html>
