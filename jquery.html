@@ -5,23 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
     <title>jQuery</title>
 </head>
 <body>
 
-    <div id="circle"></div>
+    <div id="accordion">
 
-    <div class="square"></div>
+        <h3>Heading One</h3>
+        <div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, error expedita rerum doloribus sit asperiores maiores similique laudantium ratione quos quam suscipit nulla. Quibusdam voluptatem quidem neque unde cumque fugiat!
+            </p>
+        </div>
+        <h3>Heading Two</h3>
+        <div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, error expedita rerum doloribus sit asperiores maiores similique laudantium ratione quos quam suscipit nulla. Quibusdam voluptatem quidem neque unde cumque fugiat!
+            </p>
+        </div>
+        <h3>Heading Three</h3>
+        <div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, error expedita rerum doloribus sit asperiores maiores similique laudantium ratione quos quam suscipit nulla. Quibusdam voluptatem quidem neque unde cumque fugiat!
+            </p>
+            <ul id="sortable">
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+                <li>List Item 4</li>
+                <li>List Item 5</li>
+                <li>List Item 6</li>
+                <li>List Item 7</li>
+            </ul>
+        </div>
+        <h3>Heading Four</h3>
+        <div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, error expedita rerum doloribus sit asperiores maiores similique laudantium ratione quos quam suscipit nulla. Quibusdam voluptatem quidem neque unde cumque fugiat!
+            </p>
+        </div>
 
-    <div class="square"></div>
-    
+    </div>
    
     <script type="text/javascript">
-    
-        $("div").click(function() {
-            alert("div was clicked");
-        });
-    
+
+        $("#accordion").accordion();
+
+        $("#sortable").sortable();
+        $("#sortable").disableSelection();
+
     </script>
 </body>
 </html>

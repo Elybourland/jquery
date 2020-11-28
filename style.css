@@ -1,14 +1,12 @@
-#circle {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: green;
-    margin: 10px;
+#accordion h3 {
+    background: red;
+    color: white;
+    border: 5px solid orange;
 }
 
-.square {
-    width: 150px;
-    height: 150px;
-    background-color: red;
-    margin: 10px;
+#sortable li {
+    list-style-type: none;
+    background: #eee;
+    border: 1px solid #333;
+    width: 10%;
 }
